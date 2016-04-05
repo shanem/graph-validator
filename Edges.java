@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.List;
 
 public class Edges {
 
@@ -22,7 +23,7 @@ public class Edges {
 			new Edge(7, 3),
 			new Edge(9, 8),
 			new Edge(10, 8),
-			new Edge(8, 10),
+			new Edge(8, 10)
 		);
 
 	public static List<Edge> connectedGraphWithCycle = Arrays.asList(

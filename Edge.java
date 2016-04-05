@@ -1,8 +1,8 @@
 public class Edge {
-	public final Long setId;
-	public final Long parentId;
+	public final long setId;
+	public final long parentId;
 
-	public Edge(Long setId, Long parentId) {
+	public Edge(long setId, long parentId) {
 		this.setId = setId;
 		this.parentId = parentId;
 	}

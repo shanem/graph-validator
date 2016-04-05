@@ -9,4 +9,8 @@ public class StudySet {
 		this.id = id;
 		this.childSets = new ArrayList();
 	}
+
+	public long getId() {
+		return id;
+	}
 }
