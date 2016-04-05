@@ -1,4 +1,4 @@
 ## Java
 To build, execute: `make`
 
-To run, execute: `java -cp bin GraphTests`
+To run, execute: `java -ea -cp  bin GraphTests`
