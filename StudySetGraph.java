@@ -5,6 +5,7 @@ public class StudySetGraph {
 	protected Map<Long, Node> allNodes;
 
 	public StudySetGraph(List<Edge> edges) {
+		allNodes = new HashMap<>();
 		// TODO: Build graph
 	}
 
