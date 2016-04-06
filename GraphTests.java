@@ -7,6 +7,7 @@ public class GraphTests {
 		testBuildGraph();
 		testHasCycle();
 		testIsConnected();
+		testIsValidTree();
 		testFindRoot();
 		System.out.println("Tests passed!");
 	}
@@ -39,18 +40,18 @@ public class GraphTests {
 		assert node.getChildren().equals(expectedChildren);
 	}
 
-	private void testIsConnected() {
-		assert !(new StudySetGraph(Edges.disconnectedGraphWithoutCycle).isConnected());
-		assert !(new StudySetGraph(Edges.disconnectedGraphWithCycle).isConnected());
-		assert new StudySetGraph(Edges.connectedGraphWithCycle).isConnected();
-		assert new StudySetGraph(Edges.connectedGraphWithoutCycle).isConnected();
-	}
-
 	private void testHasCycle() {
 		assert !(new StudySetGraph(Edges.disconnectedGraphWithoutCycle).hasCycle());
 		assert new StudySetGraph(Edges.disconnectedGraphWithCycle).hasCycle();
 		assert new StudySetGraph(Edges.connectedGraphWithCycle).hasCycle();
 		assert !(new StudySetGraph(Edges.connectedGraphWithoutCycle).hasCycle());
+	}
+
+	private void testIsConnected() {
+		assert !(new StudySetGraph(Edges.disconnectedGraphWithoutCycle).isConnected());
+		assert !(new StudySetGraph(Edges.disconnectedGraphWithCycle).isConnected());
+		assert new StudySetGraph(Edges.connectedGraphWithCycle).isConnected();
+		assert new StudySetGraph(Edges.connectedGraphWithoutCycle).isConnected();
 	}
 
 	private void testIsValidTree() {
