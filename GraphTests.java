@@ -4,11 +4,27 @@ public class GraphTests {
 
 	public void runTests() {
 		System.out.println("Running tests...");
+		
+		System.out.println("testBuildGraph...");
 		testBuildGraph();
+		System.out.println("Passed!");
+		
+		System.out.println("testHasCycle...");
 		testHasCycle();
+		System.out.println("Passed!");
+
+		System.out.println("testIsConnected...");
 		testIsConnected();
+		System.out.println("Passed!");
+
+		System.out.println("testIsValidTree...");
 		testIsValidTree();
+		System.out.println("Passed!");
+
+		System.out.println("testIsValidTree...");
 		testFindRoot();
+		System.out.println("Passed!");
+		
 		System.out.println("Tests passed!");
 	}
 
