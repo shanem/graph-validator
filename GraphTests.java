@@ -19,16 +19,24 @@ public class GraphTests {
 		expectedChildren.add(new Node(10));
 
 		StudySetGraph disconnectedGraphWithoutCycle = new StudySetGraph(Edges.disconnectedGraphWithoutCycle);
-		assert disconnectedGraphWithoutCycle.getNode(8).getChildren().equals(expectedChildren);
+		Node node = disconnectedGraphWithoutCycle.getNode(8);
+		assert node != null;
+		assert node.getChildren().equals(expectedChildren);
 		
 		StudySetGraph disconnectedGraphWithCycle = new StudySetGraph(Edges.disconnectedGraphWithCycle);
-		assert disconnectedGraphWithCycle.getNode(8).getChildren().equals(expectedChildren);
+		node = disconnectedGraphWithoutCycle.getNode(8);
+		assert node != null;
+		assert node.getChildren().equals(expectedChildren);
 		
 		StudySetGraph connectedGraphWithCycle = new StudySetGraph(Edges.connectedGraphWithCycle);
-		assert connectedGraphWithCycle.getNode(8).getChildren().equals(expectedChildren);
+		node = disconnectedGraphWithoutCycle.getNode(8);
+		assert node != null;
+		assert node.getChildren().equals(expectedChildren);
 
 		StudySetGraph connectedGraphWithoutCycle = new StudySetGraph(Edges.connectedGraphWithoutCycle);
-		assert connectedGraphWithoutCycle.getNode(8).getChildren().equals(expectedChildren);
+		node = disconnectedGraphWithoutCycle.getNode(8);
+		assert node != null;
+		assert node.getChildren().equals(expectedChildren);
 	}
 
 	private void testIsConnected() {
