@@ -62,6 +62,10 @@ public class GraphTests {
 	}
 
 	private void testFindRoot() {
+		assert new StudySetGraph(Edges.disconnectedGraphWithoutCycle).getTreeRoot() == null;
+		assert new StudySetGraph(Edges.disconnectedGraphWithCycle).getTreeRoot() == null;
+		assert new StudySetGraph(Edges.connectedGraphWithCycle).getTreeRoot() == null;
+
 		StudySetGraph tree = new StudySetGraph(Edges.connectedGraphWithoutCycle);
 		Node root = tree.getTreeRoot();
 		assert root != null;

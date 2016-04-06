@@ -29,7 +29,7 @@ public class StudySetGraph {
 	}
 
 	public Node getTreeRoot() {
-		// TODO: Return root of tree. (Behavior undefined if graph is not a valid tree)
+		// TODO: Return root of tree. Return null if graph does not form a valid tree
 		return null;
 	}
 }
