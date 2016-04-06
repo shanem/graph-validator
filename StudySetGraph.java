@@ -1,9 +1,15 @@
-import java.util.List;
+import java.util.*;
 
 public class StudySetGraph {
 	
+	protected Map<Long, Node> allNodes;
+
 	public StudySetGraph(List<Edge> edges) {
 		// TODO: Build graph
+	}
+
+	public Node getNode(long id) {
+		return allNodes.get(id);
 	}
 
 	public boolean isConnected() {
@@ -21,7 +27,7 @@ public class StudySetGraph {
 		return false;
 	}
 
-	public StudySet getTreeRoot() {
+	public Node getTreeRoot() {
 		// TODO: Return root of tree. (Behavior undefined if graph is not a valid tree)
 		return null;
 	}
