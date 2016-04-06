@@ -24,8 +24,8 @@ public class GraphTests {
 		System.out.println("testIsValidTree...");
 		testFindRoot();
 		System.out.println("Passed!");
-		
-		System.out.println("Tests passed!");
+
+		System.out.println("All tests passed!");
 	}
 
 	/** Build graphs and spot check that at least one location has the expected set of children */
